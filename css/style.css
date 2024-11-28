@@ -1,0 +1,167 @@
+/* Style de base */
+body, h1, p, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #eb8007;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+/* Bannière */
+#banner {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/baniere.jpg") fixed center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #5f5858;
+    color: #5f5858;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#banner h2 {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    color: #5f5858;
+    padding-top: 210px;
+}
+
+#banner .opinion {
+    font-size: 2em;
+    color: #3604bd;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    padding-top: 10px;
+
+}
+/* Conteneur principal */
+.container {
+    max-width: 800px;
+    margin: -50px auto 20px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.message {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e3fcef;
+    border: 1px solid #b2d8b2;
+    color: #2d6a2d;
+    text-align: center;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button, .btn {
+    background-color: #218838;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s background-color;
+    font-size: 1.1em;
+}
+
+button:hover, .btn:hover {
+    background-color: #1e7e34;
+}
+
+/* Bouton de soumission */
+#btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s background-color;
+}
+
+#btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    #banner h2, p{
+        font-size: 2.5em;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 20px;
+        width: 90%;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        font-size: 1em;
+    }
+
+    .btn, button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
